@@ -1,0 +1,87 @@
+<!--title and links-->
+<title>Reuben's Website</title>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--header-->
+  <header>
+	<h1><a href="index.html">Creative Computing</a></h1>
+  </header>
+  
+<!--navigation bar-->
+  <nav>
+      <ul>
+	  <li><a href="index.html">Home</a></li>
+      <li><a href="project1.html">Project 1</a></li>
+      <li><a href="project2.html">Project 2</a></li>
+      <li><a href="project3.html">Project 3</a></li>
+    </ul>
+  </nav>
+  
+<!--slideshow-->
+<h2> Recent Projects: (stock images for now)</h2>
+<img class="slides" src="images/slideshow/slide1.png" border="5">
+<img class="slides" src="images/slideshow/slide2.png" border="5">
+<img class="slides" src="images/slideshow/slide3.jpg" border="5">
+<img class="slides" src="images/slideshow/slide4.jpg" border="5">
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1} 
+  x[slideIndex-1].style.display = "block"; 
+  setTimeout(carousel, 4200);
+}
+</script>
+
+<!--actual page content-->
+<button class="collapsible"><h2>What's the purpose of this website?</h2></button>
+<div class="content">
+  <p>The main purpose of this website is to clearly display what I've been doing in computing this year.</p>
+  <img src="https://petapixel.com/assets/uploads/2013/01/obamaportrait1.jpg">
+</div>
+
+<button class="collapsible"><h2>What sort of projects will you do?</h2></button>
+<div class="content">
+  <p>This year I'm trying to focus on projects that are more software and coding based, rather then something like robotics.</p>
+</div>
+
+<button class="collapsible"><h2>How did you make this website?</h2></button>
+<div class="content">
+  <p>I made this website using HTML, CSS and Javascript in Notepad++.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!--footer-->
+  <footer>
+	<h3>Creative Computing Class 2019©.</h3>
+	<h3>Programs used: <a href="https://isp.netscape.com/"><u>Javascript, </u></a> <a href="https://www.w3.org/"><u> HTML</u></a> and <a href="https://www.w3.org/"><u> CSS</u>.</a></h3>
+  </footer>
+</body>

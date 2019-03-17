@@ -1,0 +1,135 @@
+
+    @import url('https://fonts.googleapis.com/css?family=Coiny');
+	@import url('https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro');
+	@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+	@import url('https://fonts.googleapis.com/css?family=Bitter');
+	
+	/*--body--*/
+	body {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		font-family: 'Bitter', serif;
+		background-color: white;
+		color: #5c5c5c;
+	}
+	
+	/*--header & headings (you need a descent res picture--*/ 
+	header {
+		text-align: center;
+		background-image: url('images/headers/techheader.png');
+		height: 250px;
+		background-color: #094581;
+		background-size: 100% 100%;
+	}
+
+    h1 {
+		height: 50px;
+		font-size: 100px;
+		position: top;
+		padding-top: 60px;
+    }
+
+	/*--header & navigation styles--*/
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+		color: #505050;
+	}
+
+    /*--navigation bar--*/
+	nav > ul {margin: auto}
+	
+    nav {
+		text-align: center;
+		font-family: 'Roboto Condensed', sans-serif;
+    }	
+	
+    ul {
+		padding: 15px;
+		background-color: #003366;
+		font-size: 25px;
+    }
+
+    li {
+		display: inline;
+		padding: 0px 10px 0px 10px;
+    }
+	
+	/*--articles--*/
+	h2 {
+	color: #404040;
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	}
+	
+    article {
+		font-size: 20px;
+		text-align: center;
+		max-width: 500px;
+		padding: 10px;
+		margin: 0 auto;
+		font-family: 'Nunito', sans-serif;
+    }
+
+	p {
+	text-align: center;	
+	}
+	
+	/*--footer*/
+	footer {
+		background-color: #003366;
+		text-align: left;
+		font-size: 16px;
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+
+	/*--i used h3 tags because i didn't know what else i could, but it doesn't matter anyway.--*/
+	h3 {
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 10px;
+	}
+
+	/*--slideshow--*/
+	img {
+		width: 50%;
+		margin: 1px auto;
+		display: block;
+		border-width: 10px;
+		border-color: #003366;
+		margin-top: 10;
+		margin-bottom: 20;
+	}
+	
+	/*--collapsible content--*/
+	/*
+	/*--button for collapsible content--*/
+	.collapsible {
+		background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		margin-top: 50;
+		margin-bottom: 50;
+		width: 100%;
+		border: none;
+		text-align: center;
+		outline: none;
+	}
+
+	/*--cursor hover background--*/
+	.active, .collapsible:hover {
+		background-color: #d6d6d6;
+	}
+
+	/*--collapsible content--*/
+	.content {
+		display: none;
+		overflow: hidden;
+		background-color: white;
+	}
+	
